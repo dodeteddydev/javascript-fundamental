@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Template</title>
+  </head>
+  <body>
+    <script>
+      // String template atau template literal
+      const name = "Dode";
+      const job = "Programmer";
+      document.writeln(
+        `Halo, nama saya ${name}, saya adalah seorang ${job} <br>`
+      );
+
+      // String template support multi line
+      const template = `Halo, nama saya ${name},
+saya adalah seorang ${job}`;
+      document.writeln(`<pre>${template}</pre>`);
+    </script>
+  </body>
+</html>

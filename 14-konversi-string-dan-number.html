@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi String dan Number</title>
+  </head>
+  <body>
+    <script>
+      // Konversi String ke Number
+      document.writeln(`${parseInt("10")} <br>`); // bilangan bulat
+      document.writeln(`${parseFloat("10.5")} <br>`); // bilangan desimal
+      document.writeln(`${Number("10.5")} | ${Number("10")} <br>`); // bilangan bulat atau desimal
+
+      // Konversi Number ke String
+      const number = 10;
+      document.writeln(`${number.toString()} <br>`);
+      document.writeln(`${String(number)} <br>`);
+
+      // NaN = Not a Number
+      document.writeln(`${Number("Dode")} <br>`);
+
+      // Function check isNaN
+      document.writeln(`${isNaN("Dode")} <br>`);
+      document.writeln(`${isNaN(10)} <br>`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe Data Object</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        name: "Dode",
+        age: 20,
+      };
+
+      //   Menambahkan property
+      person["address"] = "Jl. Raya";
+      person["hobby"] = "Coding";
+
+      //   person["name"]; // akses property bisa juga seperti ini
+      document.writeln(person.name);
+      document.writeln("<br>");
+
+      //   Mengubah property
+      //   person["name"] = "Teddy"; // mengubah property bisa juga seperti ini
+      person.name = "Teddy";
+      document.writeln(person.name);
+      document.writeln("<br>");
+
+      //   Menghapus property
+      //   delete person["hobby"]; // menghapus property bisa juga seperti ini
+      delete person.name;
+      document.writeln(JSON.stringify(person)); // JSON.stringify digunakan untuk mengubah object menjadi string
+    </script>
+  </body>
+</html>

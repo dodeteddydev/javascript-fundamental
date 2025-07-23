@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe Data Array</title>
+  </head>
+  <body>
+    <script>
+      const buah = [];
+      buah.push("Pepaya");
+      buah.push("Mangga", "Pisang", "Apel");
+      document.writeln(buah);
+
+      document.writeln("<br>");
+
+      document.writeln(buah[1]);
+
+      document.writeln("<br>");
+
+      buah[0] = "Jambu";
+      document.writeln(buah);
+
+      document.writeln("<br>");
+
+      delete buah[2];
+      document.writeln(buah);
+
+      // Karena js dynamic type programming language maka array bisa diisi dengan tipe data apa saja
+    </script>
+  </body>
+</html>
