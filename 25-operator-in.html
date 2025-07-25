@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator in</title>
+  </head>
+  <body>
+    <script>
+      /* 
+        Untuk mengecek apakah suatu property ada di object
+        Untuk mengecek apakah suatu index ada di array
+        tidak perduli valuenya ada atau tidak
+        dan bernilai true atau false
+        */
+
+      const person = {
+        name: "John Doe",
+        age: 20,
+      };
+
+      document.writeln("name" in person);
+      document.writeln("<br>");
+      document.writeln("address" in person);
+      document.writeln("<br>");
+
+      const names = ["Budi", "Mamat"];
+      document.writeln(0 in names);
+      document.writeln("<br>");
+      document.writeln(1 in names);
+      document.writeln("<br>");
+      document.writeln(2 in names);
+    </script>
+  </body>
+</html>

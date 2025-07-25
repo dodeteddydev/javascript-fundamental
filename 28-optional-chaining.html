@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Optional Chaining</title>
+  </head>
+  <body>
+    <script>
+      /*
+      Optional Chaining berfungsi untuk mengakses property di object yang mungkin null atau undefined
+      Menghindari error ketika mengakses property di object yang mungkin null atau undefined
+      user jika bernilai null maka akan diabaikan
+      user.address jika bernilai null maka akan diabaikan
+      user.address.city jika bernilai null maka akan diabaikan
+      Apabila tidak menggunakan optional chaining maka akan error jika property di object bernilai null atau undefined
+      */
+
+      const user = {
+        name: "John Doe",
+        address: {},
+      };
+
+      document.writeln(user?.address?.city);
+    </script>
+  </body>
+</html>

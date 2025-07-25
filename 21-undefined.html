@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undefined</title>
+  </head>
+  <body>
+    <script>
+      let name;
+      document.writeln(name); // undefined
+
+      document.writeln("<br>");
+
+      const names = ["Budi", "Mamat"];
+      document.writeln(names[0]);
+      document.writeln("<br>");
+      document.writeln(names[1]);
+      document.writeln("<br>");
+      document.writeln(names[2]); // undefined
+      document.writeln("<br>");
+
+      const user = {
+        name: "John Doe",
+      };
+
+      document.writeln(user.name);
+      document.writeln("<br>");
+      document.writeln(user.age);
+    </script>
+  </body>
+</html>

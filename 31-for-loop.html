@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Loop</title>
+  </head>
+  <body>
+    <script>
+      /*
+  For Loop digunakan untuk melakukan perulangan blok kode selama kondisi bernilai true.
+  For Loop memiliki 3 bagian utama dalam tanda kurung ():
+    1. Inisialisasi (Initialization): Dieksekusi sekali di awal sebelum perulangan dimulai.
+    2. Kondisi (Condition): Diperiksa sebelum setiap iterasi; jika bernilai false, perulangan berhenti.
+    3. Iterasi (Final Expression): Dieksekusi di akhir setiap iterasi, biasanya digunakan untuk mengubah variabel kontrol.
+    
+  Ketiga bagian tersebut bersifat opsional:
+    - Jika kondisi tidak diisi, maka dianggap selalu true (dapat menyebabkan infinite loop).
+    - Jika semua bagian dikosongkan, maka akan terjadi infinite loop: `for (;;)`
+      */
+
+      for (let i = 0; i < 10; i++) {
+        document.writeln(`<p>Perulangan ke-${i}</p>`);
+      }
+    </script>
+  </body>
+</html>

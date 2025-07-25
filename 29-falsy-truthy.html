@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Falsy dan Truthy</title>
+  </head>
+  <body>
+    <script>
+      // Falsy = false, 0, "", null, undefined, NaN
+      // Truthy = semua yang bukan falsy
+
+      const name = "John Doe";
+      if (name) {
+        document.writeln("Truthy");
+      }
+
+      const empty = "";
+      if (empty) {
+        // Tidak akan dijalankan karena empty bernilai falsy
+        document.writeln("Falsy");
+      }
+    </script>
+  </body>
+</html>

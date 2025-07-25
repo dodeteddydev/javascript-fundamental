@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Logika Non Boolean</title>
+  </head>
+  <body>
+    <script>
+      /*
+      Operator || akan mengembalikan operand pertama yang bernilai truthy.
+      Jika semua operand falsy, maka akan mengembalikan operand terakhir.
+      */
+
+      document.writeln(0 || false);
+      document.writeln("<br>");
+      document.writeln("" || undefined);
+      document.writeln("<br>");
+
+      /*
+      Operator && akan mengembalikan operand pertama yang bernilai falsy.
+      Jika semua operand truthy, maka akan mengembalikan operand terakhir.
+      */
+
+      document.writeln(0 && false);
+      document.writeln("<br>");
+      document.writeln(null && undefined);
+      document.writeln("<br>");
+    </script>
+  </body>
+</html>
