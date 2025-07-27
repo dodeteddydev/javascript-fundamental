@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function</title>
+  </head>
+  <body>
+    <script>
+      function greeting() {
+        document.writeln("<p>Hello, World</p>");
+      }
+      // Function bisa dipanggil berkali-kali
+      greeting();
+      greeting();
+
+      /*   
+      Function dengan parameter
+      parameter bersifat opsional
+      jika tidak isi maka parameter bernilai undefined
+      */
+      function greetingWithName(firstName, lastName) {
+        document.writeln(`<p>Hello, ${firstName} ${lastName}</p>`);
+      }
+      greetingWithName("John", "Doe");
+      //   contoh jika tidak mengisi parameter
+      greetingWithName("Jane");
+
+      //   Parameter bisa diisi dengan default value
+      function greetingWithNameDefaultValue(
+        firstName,
+        lastName = "Default Value"
+      ) {
+        document.writeln(`<p>Hello, ${firstName} ${lastName}</p>`);
+      }
+      greetingWithNameDefaultValue("John", "Doe");
+      //   contoh jika tidak mengisi parameter, paramater lastName akan diisi dengan default value
+      greetingWithNameDefaultValue("Jane");
+    </script>
+  </body>
+</html>

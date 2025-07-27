@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>With Statement</title>
+  </head>
+  <body>
+    <script>
+      // With Statement sudah tidak digunakan lagi di JavaScript yang sekarang
+
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50,
+        eyeColor: "blue",
+      };
+
+      with (person) {
+        document.writeln(firstName);
+        document.writeln("<br>");
+        document.writeln(lastName);
+        document.writeln("<br>");
+        document.writeln(age);
+        document.writeln("<br>");
+        document.writeln(eyeColor);
+        document.writeln("<br>");
+      }
+    </script>
+  </body>
+</html>

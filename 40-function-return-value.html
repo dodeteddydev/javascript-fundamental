@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function</title>
+  </head>
+  <body>
+    <script>
+      function greeting() {
+        return "Hello, World";
+      }
+      const helloWorld = greeting();
+      document.writeln(`<p>${helloWorld}</p>`);
+
+      function greetingWithName(firstName, lastName) {
+        return `Hello, ${firstName} ${lastName}`;
+      }
+      const helloJohnDoe = greetingWithName("John", "Doe");
+      document.writeln(`<p>${helloJohnDoe}</p>`);
+
+      function getScore(value) {
+        if (value >= 80) {
+          return "A";
+        } else if (value >= 70) {
+          return "B";
+        } else if (value >= 60) {
+          return "C";
+        } else {
+          return "D";
+        }
+      }
+
+      const score = getScore(75);
+      document.writeln(`<p>Score: ${score}</p>`);
+
+      /* Function dengan return value apabila sudah bertemu kata kunci 
+      return maka program akan berhenti di situ dan program dibawahnya tidak akan dijalankan */
+
+      function exampleReturn() {
+        return "Hello, World";
+        // ini tidak akan dijalankan
+        document.writeln("<p>Hello, World</p>");
+      }
+    </script>
+  </body>
+</html>
