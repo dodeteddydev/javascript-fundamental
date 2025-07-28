@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Sebagai Value</title>
+  </head>
+  <body>
+    <script>
+      function gretting(name) {
+        document.writeln(`<p>Halo ${name}</p>`);
+      }
+
+      gretting("John Doe");
+
+      const greet = gretting;
+      greet("Jane Doe");
+
+      function functionAsParameter(callback) {
+        callback("John Doe Function As Parameter");
+      }
+
+      functionAsParameter(gretting);
+    </script>
+  </body>
+</html>

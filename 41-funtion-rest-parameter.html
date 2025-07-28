@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Rest Parameter</title>
+  </head>
+  <body>
+    <script>
+      //     Dengan menggunakan rest parameter kita bisa memanggil function dengan jumlah parameter yang tidak terbatas
+
+      function sum(...values) {
+        let total = 0;
+        for (const value of values) {
+          total += value;
+        }
+        return total;
+      }
+
+      document.writeln(sum(1, 2, 3, 4, 5));
+
+      document.writeln("<br>");
+
+      //   Selain itu ada spread syntax yang berfungsi untuk menggabungkan array menjadi rest parameter
+      const numbers = [1, 2, 3, 4, 5];
+      document.writeln(sum(...numbers));
+
+      /* 
+      Hasil tidak akan sesuai dengan yang diharapkan
+        document.writeln(sum(numbers));
+    */
+    </script>
+  </body>
+</html>

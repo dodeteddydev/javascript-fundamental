@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anonymous Function</title>
+  </head>
+  <body>
+    <script>
+      // Anonymous function adalah function tanpa nama
+      const sayHello = function (name) {
+        document.writeln(`Halo ${name}`);
+      };
+
+      sayHello("John Doe");
+
+      document.writeln("<br>");
+
+      function greeting(callback) {
+        callback("John Doe");
+      }
+
+      // Anonymous function sebagai parameter
+      greeting(function (name) {
+        document.writeln(`Halo ${name}`);
+      });
+    </script>
+  </body>
+</html>

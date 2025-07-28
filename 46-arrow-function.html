@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Function</title>
+  </head>
+  <body>
+    <script>
+      const sayHello = () => {
+        document.writeln("Hello World");
+      };
+
+      sayHello();
+
+      document.writeln("<br>");
+
+      const greet = (name) => document.writeln(`Hello ${name}`);
+
+      greet("John Doe");
+
+      document.writeln("<br>");
+
+      //   Arrow function return value
+      const getGreeting = (name) => {
+        return `Hello ${name}`;
+      };
+      document.writeln(getGreeting("John Doe"));
+
+      document.writeln("<br>");
+
+      const sum = (a, b) => a + b;
+      document.writeln(sum(1, 2));
+
+      document.writeln("<br>");
+
+      //   Arrow function sebagai parameter
+      function greeting(callback) {
+        callback("John Doe");
+      }
+      greeting((name) => document.writeln(`Hello ${name}`));
+    </script>
+  </body>
+</html>

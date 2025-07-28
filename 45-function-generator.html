@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Generator</title>
+  </head>
+  <body>
+    <script>
+      // Generator bersifat lazy, artinya function akan dieksekusi ketika di iterasi
+      function* generator() {
+        yield 1;
+        yield 2;
+        yield 3;
+      }
+
+      const gen = generator();
+      for (const element of gen) {
+        document.writeln(element);
+        document.writeln("<br>");
+      }
+
+      document.writeln("<hr>");
+
+      //   Function bersifat eager
+      function getNumbersEager() {
+        const numbers = [];
+        for (let i = 0; i < 5; i++) {
+          document.writeln("Eager:", i);
+          document.writeln("<br>");
+
+          numbers.push(i);
+        }
+        return numbers;
+      }
+
+      const result = getNumbersEager();
+      document.writeln(result);
+
+      document.writeln("<hr>");
+
+      // Generator bersifat lazy
+      function* getNumbersLazy() {
+        for (let i = 0; i < 5; i++) {
+          document.writeln("Yielding:", i);
+          document.writeln("<br>");
+          yield i;
+        }
+      }
+
+      const generators = getNumbersLazy();
+
+      for (const number of generators) {
+        document.writeln("Received:", number);
+        document.writeln("<br>");
+      }
+    </script>
+  </body>
+</html>
