@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closure</title>
+  </head>
+  <body>
+    <script>
+      // Closure adalah seolah-olah kita mengeluarkan sebuah function dari scope function yang lain
+      // Closure adalah sebuah function yang memiliki akses ke variable di scope function yang lain
+
+      function outer(value) {
+        const name = "John Doe";
+
+        function inner(param) {
+          document.writeln(name);
+          document.writeln("<br>");
+          return value + param;
+        }
+
+        return inner;
+      }
+
+      const result = outer(10);
+      document.writeln(result(5));
+    </script>
+  </body>
+</html>

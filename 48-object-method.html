@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Method</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        id: 5566,
+        fullName: function () {
+          return this.firstName + " " + this.lastName;
+        },
+      };
+
+      document.writeln(person.fullName());
+
+      document.writeln("<br>");
+
+      //   Bisa menambahkan method ke dalam object
+      const user = {
+        name: "John Doe",
+      };
+
+      user.fullName = function () {
+        return "Hello World";
+      };
+
+      document.writeln(user.fullName());
+    </script>
+  </body>
+</html>
