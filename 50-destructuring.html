@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring</title>
+  </head>
+  <body>
+    <script>
+      // Array destructuring
+      const users = ["John Doe", "Jane Doe", "Jack Doe"];
+
+      const [name1, name2] = users;
+      document.writeln(name1);
+      document.writeln("<br>");
+      document.writeln(name2);
+      document.writeln("<br>");
+
+      //   Object destructuring
+      const user = {
+        name: "John Doe",
+        age: 30,
+        address: {
+          city: "Jakarta",
+          country: "Indonesia",
+        },
+      };
+
+      const {
+        name,
+        age,
+        address: { city },
+      } = user;
+      document.writeln(name);
+      document.writeln("<br>");
+      document.writeln(age);
+      document.writeln("<br>");
+      document.writeln(city);
+    </script>
+  </body>
+</html>
